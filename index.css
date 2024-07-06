@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0a2851;
+  --secondary-color: #e6e9ed;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f3f5fc;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  max-height: 800px;
+
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.main-content {
+  flex: 2;
+}
+
+.sidebar {
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.h1-aside {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 120%;
+  color: #343a40;
+  max-width: 250px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.p-aside {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #495057;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.h1-title {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: #0a3871;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 90%;
+  height: 288px;
+  margin-top: 10%;
+  margin-bottom: 45%;
+  margin-right: 5%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: #0a3871;
+  font-weight: 400;
+  line-height: 150%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.new-aside {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+  width: 400px;
+  height: 850px;
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto; /* Agregado para scroll vertical */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copy-btn {
+  padding: 10px 20px;
+  border: 1px solid #0a3871;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #0a3871;
+  width: 336px;
+  height: 67px;
+  border-radius: 24px;
+}
+
+.encrypted-message {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #495057;
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+textarea::placeholder {
+  color: #0a3871;
+}
+
+text::-webkit-scrollbar {
+  display: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 24px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.encrypt-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #0a3871;
+  color: white;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+}
+
+.decrypt-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+}
+
+.info-conteiner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+.info {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: gray;
+}
+
+.ilustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ilustration {
+    display: none;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .new-aside {
+    max-width: none;
+    width: 100%;
+  }
+  .copy-btn {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .new-aside {
+    max-width: none;
+    width: 100%;
+  }
+  .ilustration {
+    display: none;
+  }
+}

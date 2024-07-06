@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/Logo@2x.png" alt="Logo" width="120px" height="48px" />
+    </header>
+    <div class="container">
+      <main class="main-content">
+        <textarea
+          placeholder="Ingrese el texto aqui"
+          id="textarea-input"
+        ></textarea>
+        <div class="info-conteiner">
+          <img
+            src="./assets/Group.png"
+            alt="danger"
+            width="16px"
+            height="16px"
+          />
+          <p class="info">Solo letras minusculas y sin acentos</p>
+        </div>
+        <div class="button-group">
+          <button class="encrypt-btn">Encriptar</button>
+          <button class="decrypt-btn">Desencriptar</button>
+        </div>
+      </main>
+      <aside class="sidebar" id="sidebar">
+        <div class="ilustration">
+          <img
+            src="./assets/Muñeco.png"
+            alt="muñeco"
+            width="336px"
+            height="304px"
+            class="ilustration"
+          />
+        </div>
+        <h1 class="h1-aside">Ningún mensaje fue encontrado</h1>
+        <p class="p-aside">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+      </aside>
+      <aside class="new-aside" id="new-sidebar" style="display: none">
+        <div class="content-container">
+          <p class="encrypted-message"></p>
+        </div>
+        <div class="button-container">
+          <button class="copy-btn">Copiar</button>
+        </div>
+      </aside>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
